@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover"/> -->
+        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1580251_48p0yj624tn.css">
+        <link rel="stylesheet" href="./static/mui/css/mui.min.css">
+        <link rel="stylesheet" href="./static/mui/css/mui.picker.min.css">
+        <style>
+                body >iframe{
+                    /* display: none;; */
+                    position: fixed;
+                    z-index: -99;
+                }
+        </style>
+    </head>
+    <body style="overflow:hidden">
+        <script src="./static/mui/js/mui.min.js"></script>
+        <script src="./static/mui/js/mui.picker.min.js"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=z5f2NmT6zFsXKMHcl2dwneR0ahTzXPOM"> </script>
+        <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=QR3BZ-QON6P-YZ7DH-VUZO3-FGSIO-PVBBC"></script>
+        <script src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
+        <!-- <script src="http://cstaticdun.126.net/load.min.js?t=201903281201"></script> -->
+        <script id="yundun"></script>
+        <!-- <script  charset="UTF-8" type="text/javascript" src="http://cstaticdun.126.net/load.min.js?t=201903281201"></script> -->
+        <!-- <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script> -->
+        <div id="app"></div>
+        <!-- <van-number-keyboard safe-area-inset-bottom /> -->
+       <!-- <script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script> -->
+       <script>
+            // 扩展API加载完毕后调用onPlusReady回调函数
+            // document.addEventListener( "plusready", onPlusReady, false );
+            // // 扩展API加载完毕，现在可以正常调用扩展API
+            // function onPlusReady() {
+            //     var e = document.getElementById("scan");
+            //     e.removeAttribute( "disabled" );
+            // }
+            
+            try{
+                plus.navigator.closeSplashscreen();
+            }catch(e){}
+
+       </script>
+    </body>
+</html>
